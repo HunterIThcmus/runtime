@@ -1,0 +1,8 @@
+quantb.com. {
+    failover ./runtime/config/36/d5/quantb.com/failover.vr
+    geoip ./runtime/config/36/d5/quantb.com/geoip.vr
+    multivalue ./runtime/config/36/d5/quantb.com/multivalue.vr
+    static ./runtime/config/36/d5/quantb.com/static.vr
+    weighted ./runtime/config/36/d5/quantb.com/weighted.vr
+
+}

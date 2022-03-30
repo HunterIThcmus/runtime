@@ -1,0 +1,7 @@
+test.com. {
+    failover ./runtime/config/36/d5/quantb.com/failover.json
+    geoip ./runtime/config/36/d5/quantb.com/geoip.json
+    multivalue ./runtime/config/36/d5/quantb.com/multivalue.json
+    static ./runtime/config/36/d5/quantb.com/static.json
+    weighted ./runtime/config/36/d5/quantb.com/weighted.json
+}

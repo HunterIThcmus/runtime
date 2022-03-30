@@ -1,0 +1,38 @@
+[
+    {
+        "name": "wrr.test.com.",
+        "healthCheck": false,
+        "type": "A",
+        "ttl": 1000,
+        "config": {
+            "values": [
+                {
+                    "ip": "1.23.44.44",
+                    "weight": 10
+                },
+                {
+                    "ip": "11.22.33.44",
+                    "weight": 10
+                }
+            ]
+        }
+    },
+    {
+        "name": "*.wrr.test.com.",
+        "healthCheck": false,
+        "type": "A",
+        "ttl": 1000,
+        "config": {
+            "values": [
+                {
+                    "ip": "2.3.4.5",
+                    "weight": 9
+                },
+                {
+                    "ip": "5.4.6.7",
+                    "weight": 10
+                }
+            ]
+        }
+    }
+]

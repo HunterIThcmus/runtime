@@ -1,0 +1,12 @@
+. {
+  vr_location GeoIP2-City.mmdb
+  reload 4s
+}
+
+test.com. {
+  vr_static ./runtime/config/37/eb/test.com/static.json
+  vr_failover ./runtime/config/37/eb/test.com/failover.json
+  vr_multivalue ./runtime/config/37/eb/test.com/multivalue.json
+  vr_weighted ./runtime/config/37/eb/test.com/weighted.json
+  vr_geoip ./runtime/config/37/eb/test.com/geoip.json
+}

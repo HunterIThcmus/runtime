@@ -1,0 +1,95 @@
+[
+  {
+    "name": "cname.test.com.",
+    "type": "CNAME",
+    "ttl": 1000,
+    "config": {
+      "values": [
+        "ddd.ddd.com"
+      ]
+    }
+  },
+  {
+    "name": "mx.test.com.",
+    "type": "MX",
+    "ttl": 1000,
+    "config": {
+      "values": [
+        {
+          "host": "abc.com",
+          "preference": 12
+        },
+        {
+          "host": "abcd.com",
+          "preference": 10
+        }
+      ]
+    }
+  },
+  {
+    "name": "test.com.",
+    "type": "NS",
+    "ttl": 1000,
+    "config": {
+      "values": [
+        "ns1.vngcloud.vn",
+        "ns2.vngcloud.vn"
+      ]
+    }
+  },
+  {
+    "name": "a.test.com.",
+    "type": "A",
+    "ttl": 1000,
+    "config": {
+      "values": [
+        "1.2.3.4",
+        "4.3.2.1"
+      ]
+    }
+  },
+  {
+    "name": "*.a.test.com.",
+    "type": "A",
+    "ttl": 1000,
+    "config": {
+      "values": [
+        "1.2.3.4",
+        "4.3.2.1"
+      ]
+    }
+  },
+  {
+    "name": "aaaa.test.com.",
+    "type": "AAAA",
+    "ttl": 1000,
+    "config": {
+      "values": [
+        "1.2.3.4",
+        "4.3.2.1"
+      ]
+    }
+  },
+  {
+    "name": "*.txt.test.com.",
+    "type": "TXT",
+    "ttl": 1000,
+    "config": {
+      "values": [
+        "from vRoute with luv <3",
+        "from vRoute with love <3"
+      ]
+    }
+  },
+  {
+    "name": "dname.test.com.",
+    "type": "DNAME",
+    "ttl": 1000,
+    "config": {
+      "values": [
+        "abc.com",
+        "def.com"
+      ]
+    }
+  }
+]
