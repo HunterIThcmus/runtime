@@ -1,0 +1,18 @@
+ {
+    geoip GeoLite2-City.mmdb
+    metadata
+    errors
+    prometheus 0.0.0.0:9253
+    vstack_core {
+        log_file ./vstack-core.log
+        controller_server localhost:8090
+        controller_auth_token {$CONTROLLER_TOKEN}
+        cache_server 210.245.38.72:8379
+        cache_expiration 5m
+        zone_update_interval 5m
+        notification_server nats://nats_client:nats_client@123@10.76.0.233:4222
+        notification_subject cluster1-core
+        cluster nsdev-cluster1
+    }
+    log
+}
