@@ -1,6 +1,6 @@
 . {
   vr_location GeoIP2-City.mmdb
-  reload 4s
+  reload 5s
 }
 
 test.com. {
